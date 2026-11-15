@@ -1,0 +1,14 @@
+ # VisionTrack
+ - Approved: web, white/neon purple, silent webcam recording, share-only viewer.
+ - Owner: brandonazevedo87@gmail.com, verified Google sign-in; no self-activation.
+ - Plan: R$150/month default, manual Pix configured by owner; activation duration editable.
+ - Build: Better Auth, profiles, settings, recordings, private Tigris storage with expiring viewer URLs.
+ - Screens: dashboard, recordings, plan, admin activation/settings, auth modal, video viewer.
+ - Verify: build, browser desktop/mobile, signup pending, activation permissions, webcam and upload smoke tests.
+ - Never seed a privileged demo user; signed-out dashboard is explicitly demonstrative.
+ - Completed: persisted profiles/settings/recordings, private uploads, owner-only approvals, editable R$150/30-day plan, Google first-login owner reservation, authenticated password setup/change.
+ - Verified: lint 0 errors, full build successful; desktop/mobile no browser errors or overflow; signup creates pending profile; activation/members/upload forbidden for pending technician; owner email/password signup rejected.
+ - End-to-end tested using temporary non-admin QA technician: webcam video-only track at 1280px, 2-second recording, private upload, share link, logged-out video playback readyState 4, no dashboard access in viewer.
+ - Removed both synthetic QA accounts and uploaded video after verification. No privileged demo account created. Actual owner's Google login must be completed by the user.
+ - Operational limits: browser page must remain open during capture/upload; max upload 2GB; share-link holders can view that single video. Pix uses a bank-issued key configured by owner, manual receipt confirmation only.
+ - Next: owner signs in with Google, defines password if desired, configures bank Pix key and beneficiary in Settings, approves paying technicians.
